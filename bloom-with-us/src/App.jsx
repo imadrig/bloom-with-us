@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
-          path="/customer-success-manager"
+          path="customer-success-manager"
           element={<CustomerSuccessManagerPath />}
         />
       </Routes>
