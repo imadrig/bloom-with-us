@@ -17,10 +17,10 @@ export default function Nav() {
           </svg>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-right">
         <a href="/">Home</a>
       </div>
-      <div className="text-center">
+      <div className="text-right">
         <a href="/customer-success-manager">Customer Success Manager Path</a>
       </div>
     </nav>
