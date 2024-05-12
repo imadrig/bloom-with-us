@@ -2,7 +2,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { RouterProvider } from "react-aria-components";
 import "./App.css";
 import HomePage from "./Pages/Home";
-import CustomerSuccessManagerPath from "./Pages/CareerPaths/CustomerSuccessManagerPath/CustomerSuccessManagerSkillsAssessment";
+import CustomerSuccessManagerPath from "./Pages/CareerPaths/CustomerSuccessManagerPath/CustomerSuccessManagerSkillsAssessment.jsx";
 import Header from "./components/PageLayout/Header";
 
 function App() {
