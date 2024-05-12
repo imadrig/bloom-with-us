@@ -28,7 +28,7 @@ function HomePage() {
         </p>
       </div>
       <h1 className="text-3xl font-bold underline text-blue-700">
-        Hello, we&apos;re the Neptune Navigators!
+        Hello, Bloom with Us!
       </h1>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
