@@ -21,7 +21,7 @@ export default function Nav() {
         <a href="/">Home</a>
       </div>
       <div className="text-right">
-        <a href="customer-success-manager">Customer Success Manager Path</a>
+        <a href="/customer-success-manager">Customer Success Manager Path</a>
       </div>
     </nav>
   );

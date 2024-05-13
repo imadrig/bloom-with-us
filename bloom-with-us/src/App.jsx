@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { RouterProvider } from "react-aria-components";
 import "./App.css";
 import HomePage from "./Pages/Home";
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
-          path="customer-success-manager"
+          path="/customer-success-manager"
           element={<CustomerSuccessManagerPath />}
         />
       </Routes>
@@ -23,3 +23,7 @@ function App() {
 }
 
 export default App;
+
+<BrowserRouter>
+  <App />
+</BrowserRouter>;
