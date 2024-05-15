@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { RouterProvider } from "react-aria-components";
 import "./App.css";
 import HomePage from "./Pages/Home";
@@ -23,3 +23,7 @@ function App() {
 }
 
 export default App;
+
+<BrowserRouter>
+  <App />
+</BrowserRouter>;
