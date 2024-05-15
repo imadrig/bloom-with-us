@@ -4,7 +4,7 @@ import "./App.css";
 import HomePage from "./Pages/Home";
 import CustomerSuccessManagerPath from "./Pages/CareerPaths/CustomerSuccessManagerPath/CustomerSuccessManagerSkillsAssessment";
 import Header from "./components/PageLayout/Header";
-import AsessmentIntro from "./Pages/AssessmentIntro";
+import AssessmentIntro from "./Pages/AssessmentIntro";
 
 function App() {
   let navigate = useNavigate();
@@ -18,7 +18,7 @@ function App() {
           path="/customer-success-manager"
           element={<CustomerSuccessManagerPath />}
         />
-        <Route path="asessment-intro" element={<AsessmentIntro />} />
+        <Route path="assessment-intro" element={<AssessmentIntro />} />
       </Routes>
     </RouterProvider>
   );
