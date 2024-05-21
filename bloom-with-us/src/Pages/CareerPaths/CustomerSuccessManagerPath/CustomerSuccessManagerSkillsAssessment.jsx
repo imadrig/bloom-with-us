@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "../../../components/button";
 import SkillsQuestions from "./QuestionsCustomerSuccessManager";
 
 export default function CustomerSuccessManagerSkillsAssessment() {
@@ -11,18 +12,15 @@ export default function CustomerSuccessManagerSkillsAssessment() {
   return (
     <div>
       <SkillsQuestions currentSkill={currentSkill} />
-      <button
-        className="bg-gray-300 m-6 p-2 rounded"
-        onClick={handleMoveToNextSkill}
-      >
-        Yes
-      </button>
-      <button
-        className="bg-gray-300 m-6 p-2 rounded"
-        onClick={handleMoveToNextSkill}
-      >
-        No
-      </button>
+
+      <div>
+        <Button variant="primaryBlue" onClick={handleMoveToNextSkill}>
+          Yes
+        </Button>
+        <Button variant="primaryYellow" onClick={handleMoveToNextSkill}>
+          No
+        </Button>
+      </div>
     </div>
   );
 }

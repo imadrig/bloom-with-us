@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
-          path="/customer-success-manager"
+          path="/skill-assessment"
           element={<CustomerSuccessManagerPath />}
         />
         <Route path="assessment-intro" element={<AssessmentIntro />} />

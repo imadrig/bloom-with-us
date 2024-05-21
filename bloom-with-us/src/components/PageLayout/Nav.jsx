@@ -32,7 +32,7 @@ export default function Nav() {
               <a href="#">About Us</a>
             </li>
             <li className="md:px-4 md:py-2 hover:text-white">
-              <a href="/customer-success-manager">Skill Assessment Tools</a>
+              <a href="/assessment-intro">Skill Assessment Tools</a>
             </li>
             <li className="md:px-4 md:py-2 hover:text-white">
               <a href="#">Goal/Progress Tracking</a>

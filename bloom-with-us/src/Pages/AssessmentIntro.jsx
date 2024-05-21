@@ -14,7 +14,7 @@ export default function AssessmentIntro() {
         skills assessment to see what skills you already possess and what skills
         we can help you improve upon.
       </p>
-      <Link to={"/customer-success-manager"}>
+      <Link to={"/skill-assessment"}>
         <Button
           variant="gray"
           className="w-20 self-center"
