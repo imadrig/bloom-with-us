@@ -15,9 +15,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/skill-assessment" element={<SkillAssessment />} />
+        <Route path="skill-assessment" element={<SkillAssessment />} />
         <Route path="assessment-intro" element={<AssessmentIntro />} />
-        <Route path="/results-page" element={<ResultsPage />} />
+        <Route path="results-page" element={<ResultsPage />} />
       </Routes>
     </RouterProvider>
   );
