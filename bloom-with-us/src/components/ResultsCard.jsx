@@ -1,15 +1,36 @@
-export default function ResultsCard() {
+/* eslint-disable react/prop-types */
+export default function ResultsCard({ yesAnswer, noAnswer }) {
   return (
     <div className="container mt-4 mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div className="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
-          <div className="m-3">
-            <h2 className="text-lg mb-2">Skill</h2>
-            <p className="font-light font-mono text-sm text-gray-700 hover:text-gray-900 transition-all duration-200">
-              Skill Question that was asked
-            </p>
+      <h2 className="text-2xl font-bold mb-4">I have these skills:</h2>
+      {/* mapping each yesAnswer from array into grid card */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {yesAnswer.map((result, index) => (
+          <div
+            key={index}
+            className="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <div className="m-3">
+              <h2 className="text-lg mb-2">{result.skill}</h2>
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
+      <h2 className="text-2xl font-bold mb-4 mt-8">
+        I can improve these skills:
+      </h2>
+      {/* mapping each noAnswer from array into grid card */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {noAnswer.map((result, index) => (
+          <div
+            key={index}
+            className="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200"
+          >
+            <div className="m-3">
+              <h2 className="text-lg mb-2">{result.skill}</h2>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

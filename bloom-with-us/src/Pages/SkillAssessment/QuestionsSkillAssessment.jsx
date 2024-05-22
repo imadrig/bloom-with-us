@@ -1,14 +1,9 @@
 /* eslint-disable react/prop-types */
 import skillsAndQuestions from "../../data/CareerPathSkills/customerSuccessManagerSkills.json";
 
-export default function QuestionsSkillAssessment({
-  currentSkill,
-  onSkillLoad,
-}) {
+export default function QuestionsSkillAssessment({ currentSkill }) {
   //Access the skill the user is seeing
   const currentSkillDisplaying = skillsAndQuestions[currentSkill];
-
-  onSkillLoad(currentSkillDisplaying);
 
   return (
     <div className="pt-6 w-full">

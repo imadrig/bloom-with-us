@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/button";
 import QuestionsSkillAssessment from "./QuestionsSkillAssessment";
+import skillsAndQuestions from "../../data/CareerPathSkills/customerSuccessManagerSkills.json";
 
 export default function SkillsAssessment() {
   const [currentSkill, setCurrentSkill] = useState(0);
-  const [currentSkillDetails, setCurrentSkillDetails] = useState(null);
+  const goToResults = useNavigate();
+
+  const currentSkillDetails = skillsAndQuestions[currentSkill];
 
   const handleMoveToNextSkill = (answer) => {
     const yesAnswers = JSON.parse(localStorage.getItem("yesAnswers")) || [];
@@ -19,16 +23,15 @@ export default function SkillsAssessment() {
       localStorage.setItem("noAnswers", JSON.stringify(noAnswers));
     }
 
-    setCurrentSkill(currentSkill + 1);
+    currentSkill < skillsAndQuestions.length - 1
+      ? setCurrentSkill(currentSkill + 1)
+      : goToResults("/results-page");
   };
 
   return (
     <div className="flex flex-col mt-6">
       <div>
-        <QuestionsSkillAssessment
-          currentSkill={currentSkill}
-          onSkillLoad={setCurrentSkillDetails}
-        />
+        <QuestionsSkillAssessment currentSkill={currentSkill} />
       </div>
 
       <div>
