@@ -1,11 +1,11 @@
 import { type VariantProps } from 'cva'
 import * as ReactAria from 'react-aria-components'
 
-import { cva, cx } from '../cva.config'
+import { cva, cx } from '../../cva.config'
 
 export const buttonVariants = cva({
   base: [
-    'inline-flex items-center justify-center rounded-md font-semibold outline-none transition-colors',
+    'inline-flex items-center justify-center rounded-full font-semibold outline-none transition-colors',
     // Focus
     'focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900',
     // Disabled
@@ -26,6 +26,10 @@ export const buttonVariants = cva({
       link: 'bg-transparent text-slate-900 underline-offset-4 hover:bg-transparent hover:underline focus:bg-transparent focus:underline dark:bg-transparent dark:text-slate-100 dark:hover:bg-transparent dark:focus:bg-transparent',
       gray:
         'bg-gray-300 text-black open:bg-slate-100 hover:bg-slate-700 dark:bg-gray-300 dark:text-slate-900 dark:open:bg-slate-800 dark:hover:bg-gray-400',
+      primaryBlue:
+        'bg-blue-400 text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
+      primaryYellow:
+        'bg-orange-200 text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
     },
     size: {
       lg: 'h-12 px-6 text-lg',

@@ -11,6 +11,7 @@
     "format": "prettier --write ./src"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "cva": "^1.0.0-beta.1",
     "lucide-react": "^0.373.0",
     "prop-types": "^15.8.1",
