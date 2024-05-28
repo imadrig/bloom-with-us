@@ -11,4 +11,4 @@ jobs:
       uses: madrapps/add-reviewers@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        reviewers: samwambam,imadrig
+        reviewers: samwambam
