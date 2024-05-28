@@ -1,7 +1,9 @@
-import Nav from './Nav';
+import Nav from "./Nav";
 
 export default function Header() {
-    return(
-        <Nav/>
-    )
+  return (
+    <header>
+      <Nav />
+    </header>
+  );
 }

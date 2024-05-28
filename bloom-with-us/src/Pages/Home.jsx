@@ -1,43 +1,53 @@
-import { useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Button } from "../components/button";
 
-function HomePage() {
-  const [count, setCount] = useState(0);
-
+export default function Home() {
   return (
-    <>
-      <div className="flex justify-center">
-        <a href="https://vitejs.dev" target="blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="bg-white">
+      <div className="px-6 lg:px-8">
+        <div className="mx-auto flex justify-center">
+          <div className="mt-6 text-center w-2/3">
+            <h1 className="text-3xl text-black">
+              Imposter syndrome is not a diagnosable condition, yet it often
+              goes hand-in-hand with anxiety, depression, and career burnout.
+              Extremely common and may impair professional performance.
+            </h1>
+            <p className="text-lg font-bold mt-6">
+              We’re here to help you navigate
+            </p>
+            <div className="flex justify-center space-x-6 mt-6">
+              <div className="bg-white p-6 rounded-lg w-1/4">
+                <h2 className="text-2xl font-bold mb-2 text-gray-800">
+                  <Button variant="primaryBlue" className="w-6">
+                    1
+                  </Button>
+                </h2>
+                <p className="text-gray-700">Take a Skill Assessment</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg w-1/4">
+                <h2 className="text-2xl font-bold mb-2 text-gray-800">
+                  <Button variant="primaryBlue" className="w-6">
+                    2
+                  </Button>
+                </h2>
+                <p className="text-gray-700">Set & Accomplish Goals</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg w-1/4">
+                <h2 className="text-2xl font-bold mb-2 text-gray-800">
+                  <Button variant="primaryBlue" className="w-6">
+                    3
+                  </Button>
+                </h2>
+                <p className="text-gray-700">
+                  Explore <br /> Resources
+                </p>
+              </div>
+            </div>
+            <Button variant="primaryYellow" className="h-12 w-96 mt-6">
+              Learn more about Imposter Syndrome
+            </Button>
+          </div>
+        </div>
       </div>
-      <div className="card">
-        <span className="relative flex h-3 w-3">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-        </span>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <h1 className="text-3xl font-bold underline text-blue-700">
-        Hello, Bloom with Us!
-      </h1>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p className="read-the-docs">
-        <a href="/results-page">Results</a>
-      </p>
-    </>
+    </div>
   );
 }
-
-export default HomePage;
