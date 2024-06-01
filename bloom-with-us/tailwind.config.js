@@ -5,6 +5,9 @@ import tailwindAriaComponents from "tailwindcss-react-aria-components";
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      bgpurple: "#BE95C4",
+    },
     extend: {},
   },
   plugins: [tailwindcssAnimate, tailwindAriaComponents],
