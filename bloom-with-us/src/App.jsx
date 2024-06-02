@@ -6,6 +6,7 @@ import SkillAssessment from "./Pages/SkillAssessment/SkillsAssessment.jsx";
 import Header from "./components/PageLayout/Header";
 import AssessmentIntro from "./Pages/AssessmentIntro";
 import ResultsPage from "./Pages/SkillAssessment/ResultsPage.jsx";
+import GoalsIntro from "./Pages/GoalsIntro.jsx";
 
 function App() {
   let navigate = useNavigate();
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="skill-assessment" element={<SkillAssessment />} />
         <Route path="assessment-intro" element={<AssessmentIntro />} />
+        <Route path="goal-progress-tracking" element={<GoalsIntro />} />
         <Route path="results-page" element={<ResultsPage />} />
       </Routes>
     </RouterProvider>

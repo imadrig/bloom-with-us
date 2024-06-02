@@ -26,16 +26,19 @@ export const buttonVariants = cva({
       link: 'bg-transparent text-slate-900 underline-offset-4 hover:bg-transparent hover:underline focus:bg-transparent focus:underline dark:bg-transparent dark:text-slate-100 dark:hover:bg-transparent dark:focus:bg-transparent',
       gray:
         'bg-gray-300 text-black open:bg-slate-100 hover:bg-slate-700 dark:bg-gray-300 dark:text-slate-900 dark:open:bg-slate-800 dark:hover:bg-gray-400',
-      primaryBlue:
-        'bg-blue-400 text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
-      primaryYellow:
-        'bg-orange-200 text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
+      secondaryDarkPurple:
+        'bg-white border-dark-purple border-2 px-5 py-2.5 text-center me-2 mb-2 w-48',
+      primaryLightPurple:
+        'bg-light-purple text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
+      secondaryBlue:
+        'bg-white border-blue-400 border-2 text-black px-5 py-2.5 text-center me-2 mb-2',
     },
     size: {
       lg: 'h-12 px-6 text-lg',
       md: 'h-10 px-4 text-base',
       sm: 'h-8 px-3 text-sm',
       xs: 'h-6 px-2 text-xs',
+      wide: 'h-10 px-4 text-base w-72'
     },
   },
   defaultVariants: {
