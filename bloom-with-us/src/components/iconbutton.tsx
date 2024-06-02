@@ -75,7 +75,7 @@ export const iconButtonVariants = cva({
       ],
       purple: [
         // Base
-        'rounded-full bg-bgpurple text-slate-900 dark:bg-transparent dark:text-slate-100',
+        'rounded-full bg-light-purple text-slate-900 dark:bg-transparent dark:text-slate-100',
         // Hover
         'hover:bg-transparent dark:hover:bg-transparent',
         // Focus

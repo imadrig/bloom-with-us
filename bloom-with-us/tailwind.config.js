@@ -6,9 +6,14 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      bgpurple: "#BE95C4",
+      "dark-purple": "#9F86C0",
+      "light-purple": "#BE95C4",
     },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        2: "10% 1fr",
+      },
+    },
   },
   plugins: [tailwindcssAnimate, tailwindAriaComponents],
 };
